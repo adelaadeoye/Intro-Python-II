@@ -1,4 +1,5 @@
 from room import Room
+from player import Player
 
 # Declare all the rooms
 
@@ -22,6 +23,9 @@ earlier adventurers. The only exit is to the south."""),
 }
 
 
+playerName = input("Enter your name: ")
+player= Player(playerName,"outside")
+direction=input("What direction do you want to go [n=north, s=south, w=west, e=east] :")
 # Link rooms together
 
 room['outside'].n_to = room['foyer']
